@@ -1,0 +1,59 @@
+/* Patient Registration Section Styles */
+.patient-registration-container {
+    font-family: Arial, sans-serif;
+    background: url('../../assets/img3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the section takes up the full height */
+  }
+  
+  /* Placecard for Registration Form */
+  .patient-registration-container .placecard {
+    max-width: 800px; /* Increased width */
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* Increased padding */
+    width: 100%;
+  }
+  
+  /* Heading Style for Registration Form */
+  .patient-registration-container .placecard-heading {
+    text-align: center;
+    color:darkblue; /* Blue color for the heading */
+    margin-bottom: 20px;
+  }
+  
+  /* Form Inputs */
+  .patient-registration-container input,
+  .patient-registration-container select {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    margin: 15px 0; /* Increased margin */
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px; /* Increased font size */
+  }
+  
+  /* Submit Button Style */
+  .patient-registration-container button {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    background-color: darkblue; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px; /* Increased font size */
+    cursor: pointer;
+  }
+  
+  /* Button Hover Effect */
+  .patient-registration-container button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

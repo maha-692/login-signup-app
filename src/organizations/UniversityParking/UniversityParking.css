@@ -1,0 +1,27 @@
+/* src/components/UniversityParking/UniversityParking.css */
+.university-parking {
+    text-align: center;
+  }
+  
+  .parking-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .parking-card {
+    display: block;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .parking-card:hover {
+    background-color: #f0f0f0;
+  }
+  

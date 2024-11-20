@@ -1,0 +1,94 @@
+/* Apply background image only to this page */
+body.ambulance-registration-page {
+    margin: 0;
+    padding: 0;
+    background-image: url('../../assets/img3.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background in place while scrolling */
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+  }
+  
+  /* Scoped styles for ambulance registration section */
+  .ambulance-registration-container {
+    width: 80%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    text-align: center;
+    backdrop-filter: blur(10px); /* Adds a blur effect behind the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Ensure the container takes enough space */
+    max-height: 90%; /* To ensure it doesn't take over the entire screen */
+    overflow-y: auto; /* Allows scrolling if content overflows */
+  }
+  
+  /* Header styling specific to ambulance registration */
+  .ambulance-registration-container h2 {
+    color: darkblue;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling specific to ambulance registration */
+  .ambulance-registration-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  /* Scoped form field styling for ambulance registration */
+  .ambulance-registration-container .ambulance-form-field label {
+    font-weight: bold;
+    color: #34495e;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .ambulance-registration-container .ambulance-form-field input,
+  .ambulance-registration-container .ambulance-form-field select {
+    padding: 10px;
+    border: 2px solid #2980b9;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+  }
+  
+  /* Custom focus effect for input and select elements */
+  .ambulance-registration-container .ambulance-form-field input:focus,
+  .ambulance-registration-container .ambulance-form-field select:focus {
+    outline: none; /* Remove default outline */
+    border: 2px solid #3498db; /* Change the border color to the blue theme */
+    background-color: #dfe6e9; /* Lighter background color when focused */
+  }
+  
+  /* Submit button styling specific to ambulance registration */
+  .ambulance-registration-container button {
+    padding: 12px 24px;
+    background-color: darkblue; /* Vibrant blue color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .ambulance-registration-container button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  

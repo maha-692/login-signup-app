@@ -1,0 +1,151 @@
+.ambulance-slot-availability {
+    background-image: url('../../assets/img3.jpg'); /* Adjust path if needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 20px;
+  }
+  
+  .ambulance-slot-availability .parking-availability {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ambulance-slot-availability h1 {
+    text-align: center;
+    color: white;
+    background-color: #1E3A8A;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .ambulance-slot-availability .zone {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #e7f1ff;
+  }
+  
+  .ambulance-slot-availability .zone h2 {
+    text-align: center;
+    color:darkblue;
+    margin: 10px 0;
+  }
+  
+  .ambulance-slot-availability .slots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .ambulance-slot-availability .slot {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    min-width: 150px;
+  }
+  
+  .ambulance-slot-availability .slot.available {
+    background-color: #dff0d8;
+    color: black;
+  }
+  
+  .ambulance-slot-availability .slot.booked {
+    background-color: #f2dede;
+    color: #a94442;
+  }
+  
+  .ambulance-slot-availability .slot:hover {
+    background-color: #e7f1ff;
+  }
+  
+  .ambulance-slot-availability .booking-form {
+    color: darkblue;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ambulance-slot-availability .booking-form input,
+  .ambulance-slot-availability .booking-form select,
+  .ambulance-slot-availability .booking-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .ambulance-slot-availability .booking-form button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ambulance-slot-availability .booking-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .ambulance-slot-availability .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .ambulance-slot-availability .ticket-display {
+    margin-top: 20px;
+  }
+  
+  .ambulance-slot-availability .ticket-header {
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  .ambulance-slot-availability .ticket-details .ticket {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .ambulance-slot-availability .ticket-details .ticket p {
+    margin: 5px 0;
+  }
+  
+  .ambulance-slot-availability .ticket-details .ticket button {
+    padding: 10px;
+    background-color:darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ambulance-slot-availability .ticket-details .ticket button:hover {
+    background-color:#007bff;
+  }
+  

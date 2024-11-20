@@ -1,0 +1,37 @@
+.admin-dashboard {
+  padding: 20px;
+}
+
+.tab-navigation button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tab-navigation .active {
+  background-color: #007bff;
+  color: white;
+}
+
+.zone-management select,
+input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.slot-management ul {
+  list-style: none;
+  padding: 0;
+}
+
+.slot-management li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.slot-management button {
+  margin-left: 10px;
+}

@@ -1,0 +1,157 @@
+/* Body and Background */
+.parking-availability-container {
+  font-family: Arial, sans-serif;
+  background: url('car.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main Parking Availability Container */
+.parking-availability {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Zones Container */
+.zones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two zones per row */
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual Zone Style */
+.zone {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: rgba(247, 247, 247, 0.9); /* Slightly transparent background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Zone Header */
+.zone h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Slot List */
+.slot-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Slot Button Styles */
+.slot-card button {
+  display: block;
+  padding: 12px;
+  margin: 0 auto;
+  width: 100%; /* Full width of the slot card */
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  text-align: center;
+}
+
+.slot-card button.available {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.slot-card button.booked {
+  background-color: #f2dede;
+  color: #a94442;
+  cursor: not-allowed; /* Prevent clicks on booked slots */
+}
+
+/* Hover Effect for Available Slots */
+.slot-card button.available:hover {
+  background-color: #e7f1ff; /* Light blue on hover */
+  transform: scale(1.05);
+}
+
+/* No Slots Message */
+.slot-list li {
+  font-size: 1.2rem;
+  color: #888;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Booking Form Styles */
+.booking-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* White background for form */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+}
+
+.booking-form button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.booking-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .zones {
+    grid-template-columns: 1fr; /* Single zone per row on smaller screens */
+  }
+
+  .slot-card button {
+    width: 100%; /* Adjust slot button to fit smaller zones */
+  }
+
+  .booking-form {
+    width: 100%; /* Full width for small screens */
+  }
+}

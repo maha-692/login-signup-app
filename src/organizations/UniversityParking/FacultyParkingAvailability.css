@@ -1,0 +1,103 @@
+/* Faculty Parking Availability Specific Styles */
+.faculty-parking-availability {
+  font-family: Arial, sans-serif;
+  background: url('car.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main Parking Availability Container */
+.faculty-parking-availability .parking-availability {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Header */
+.faculty-parking-availability h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Zones Container */
+.faculty-parking-availability .zone h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Slots Container */
+.faculty-parking-availability .slots {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  justify-content: center;
+}
+
+.faculty-parking-availability .slot {
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.faculty-parking-availability .slot.available {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.faculty-parking-availability .slot.booked {
+  background-color: #f2dede;
+  color: #a94442;
+  cursor: not-allowed;
+}
+
+.faculty-parking-availability .slot.available:hover {
+  background-color: #e7f1ff;
+  transform: scale(1.05);
+}
+
+/* Booking Form */
+.faculty-parking-availability .booking-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faculty-parking-availability .booking-form input,
+.faculty-parking-availability .booking-form select,
+.faculty-parking-availability .booking-form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+}
+
+.faculty-parking-availability .ticket-display {
+  margin-top: 20px;
+  text-align: left;
+}

@@ -1,0 +1,87 @@
+/* VIP Parking Styles (VIPParking.css) */
+.vip-parking {
+  background-color: #ccc;
+  padding: 20px;
+  /* background-image: url('img4.avif'); Add your image URL here */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Fix the image while scrolling */
+}
+
+.vip-parking .zone {
+  margin-bottom: 30px;
+  border: 1px solid #ccc; /* Border for zones */
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8); /* Add slight white background with transparency to contrast with the image */
+  border-radius: 8px; /* Rounded corners for zones */
+}
+
+.vip-parking .slot {
+  background-color: #e0f7fa; /* Light cyan color for VIP slots */
+  border: 1px solid #00acc1; /* Teal border */
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease-in-out; /* Smooth transition */
+  border-radius: 5px; /* Rounded corners for slots */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow to slots */
+}
+
+/* Hover effect for available slots */
+.vip-parking .slot:hover {
+  background-color: #e7f1ff;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Hover effect for booked slots */
+.vip-parking .slot.booked:hover {
+  background-color: #ffab91; /* Lighter peach for booked slot on hover */
+  transform: none; /* No zoom for booked slots */
+}
+
+.vip-parking .slot.booked {
+  background-color: #ffccbc; /* Light peach for booked VIP slots */
+  color: #d32f2f; /* Red color for booked slot text */
+}
+
+/* Available slot styles */
+.vip-parking .slot.available {
+  background-color: #dff0d8; /* Light green for available VIP slots */
+}
+
+/* Hover effect for available slots (different shade on hover) */
+.vip-parking .slot.available:hover {
+  background-color: #e7f1ff; /* Slightly darker green on hover */
+}
+
+/* Button styles */
+.vip-parking button {
+  background-color: #00acc1; /* Teal button for VIP */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.vip-parking button:hover {
+  background-color: #00838f; /* Darker teal on hover */
+}
+/* Change the text color of VIP Zone headers */
+.vip-parking .zone h2 {
+  color:blue; /* Default color for all zones */
+}
+
+/* Change the color for each VIP zone header */
+.vip-parking .zone.zone-1 h2 {
+  color: #ffa726; /* Light Orange for Zone 1 */
+}
+
+.vip-parking .zone.zone-2 h2 {
+  color: #f44336; /* Red for Zone 2 */
+}
+
+.vip-parking .zone.zone-3 h2 {
+  color: #4caf50; /* Green for Zone 3 */
+}

@@ -1,0 +1,81 @@
+/* Main container for the Airport Parking page */
+.airport-parking {
+    text-align: center;
+    padding: 50px 20px; /* Adds padding for spacing */
+    background-image: url('../../assets/airportpic.jpg'); /* Path to your image */
+    background-size: cover; /* Makes the image cover the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    min-height: 80vh; /* Makes the container fill the full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(232, 28, 28); /* Ensures text is visible */
+    margin-top: 30px;
+}
+
+/* Title styling */
+.title {
+    font-size: 3rem; /* Adjust size as needed */
+    margin-bottom: 40px;
+    color: rgb(232, 28, 28); /* Red color for the text */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+
+    .parking-options {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 2px; /* Adjust this value as per your requirement */
+        gap: 40px;
+    }
+    
+
+.parking-card {
+    display: block;
+    width: 180px; /* Increased width for better display */
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    background-color: #fff; /* Ensure background is white */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 20px;
+}
+
+/* Hover effect with more interaction */
+.parking-card:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-5px); /* Adds slight lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for hover */
+}
+
+.parking-card h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .parking-options {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items */
+    }
+
+    .parking-card {
+        width: 250px; /* Increased width on small screens */
+        margin-bottom: 15px; /* Adds margin between stacked cards */
+    }
+}
+
+@media (max-width: 480px) {
+    .parking-card {
+        width: 200px; /* Further reduced width on very small screens */
+    }
+} 

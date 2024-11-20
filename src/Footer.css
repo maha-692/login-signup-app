@@ -1,0 +1,40 @@
+/* src/Footer.css */
+.footer {
+  background-color: black;
+  width: 100%;
+  color: white;
+  padding: 2rem 0;
+  position: relative; /* Makes it stay at the end of the page */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* Distributes space between sections */
+  margin-bottom: 1rem;
+}
+
+.footer-section {
+  text-align: left; /* Align text to the left */
+}
+
+.footer-section h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem; /* Adjust heading size */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin: 0.3rem 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  border-top: 1px solid hsla(0, 19%, 91%, 0.941); /* Subtle top border */
+  padding-top: 1rem; /* Padding above text */
+  color: white; /* Explicitly set text color to white */
+}

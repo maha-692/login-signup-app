@@ -1,0 +1,216 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f0f7; /* Light blue background for an airport vibe */
+    margin: 0;
+    padding: 0;
+}
+  
+/* Main container */
+.admin-parking {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+/* Heading */
+.heading {
+    text-align: center;
+    font-size: 28px;
+    color: #003366; /* Dark blue for an airport-related look */
+    margin-bottom: 20px;
+}
+  
+/* Slot entry form */
+.slot-entry {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+  
+.slot-entry input,
+.slot-entry select {
+    padding: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+  
+.add-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.add-btn:hover {
+    background-color: #0056b3;
+}
+  
+/* Slots container */
+.slots-container {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.available-slots,
+.booked-slots {
+    width: 45%;
+    margin-top: 20px;
+}
+  
+h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #003366; /* Dark blue for headings */
+}
+  
+/* Slot items */
+.slot-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+}
+  
+.slot-item.passenger {
+    border-color: #007bff; /* Blue border for Passenger slots */
+}
+  
+.slot-item.staff {
+    border-color: #28a745; /* Green border for Staff slots */
+}
+  
+.slot-item.vip {
+    border-color: #ffc107; /* Yellow border for VIP slots */
+}
+  
+.slot-item.booked {
+    background-color: #f8d7da;
+    border-color: #dc3545; /* Red border for Booked slots */
+}
+  
+.slot-item p {
+    margin: 0;
+}
+  
+.slot-item .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+  
+.slot-item .buttons button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90px;
+}
+  
+.book-btn {
+    background-color: #28a745;
+    color: white;
+}
+  
+.book-btn:hover {
+    background-color: #218838;
+}
+  
+.release-btn {
+    background-color: #ffc107;
+    color: white;
+}
+  
+.release-btn:hover {
+    background-color: #e0a800;
+}
+  
+.edit-btn {
+    background-color: #007bff;
+    color: white;
+}
+  
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+  
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+  
+.delete-btn:hover {
+    background-color: #c82333;
+}
+  
+/* Generate Report Button */
+.generate-report-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+.generate-report-btn:hover {
+    background-color: #45a049;
+}
+  
+/* Download Excel Button */
+.download-excel-btn {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+.download-excel-btn:hover {
+    background-color: #0b7dda;
+}
+  
+/* Report content styling */
+.report-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+  
+.report-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+  
+.report-content th,
+.report-content td {
+    padding: 8px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+  
+/* Add responsive styling for mobile */
+@media (max-width: 768px) {
+    .slot-entry,
+    .slots-container {
+        flex-direction: column;
+    }
+  
+    .available-slots,
+    .booked-slots {
+        width: 100%;
+    }
+}

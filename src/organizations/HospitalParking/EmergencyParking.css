@@ -1,0 +1,71 @@
+/* Emergency Parking Component Container */
+.emergency-parking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:aliceblue; /* Light red background */
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .emergency-parking-container .title {
+    font-size: 2.2rem; /* Reduced size for better balance */
+    color: #721c24; /* Dark red for title */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  /* Emergency Slot Styling */
+  .emergency-parking-container .slot {
+    width: 85%;
+    max-width: 500px;
+    padding: 25px; /* Reduced padding for better proportions */
+    border-radius: 10px;
+    background-color: #f5c6cb; /* Soft pink background for reserved status */
+    border: 3px solid #dc3545; /* Slightly darker border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Softer shadow for a more elegant look */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 200px; /* Standardized height for consistency */
+  }
+  
+  /* Hover effect for slot */
+  .emergency-parking-container .slot:hover {
+    transform: scale(1.03); /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+  }
+  
+  /* Reserved Message Styling */
+  .emergency-parking-container .reserved-message {
+    font-size: 1.4rem; /* Reduced font size for a more cohesive layout */
+    font-weight: bold;
+    color: #dc3545; /* Matching red for reserved message */
+    margin-top: 10px; /* Added top margin for spacing */
+  }
+  
+  /* Slot Info Styling */
+  .emergency-parking-container .slot-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  /* Icon and styling before slot */
+  .emergency-parking-container .slot:before {
+    content: '⚠️'; /* Emergency warning icon */
+    font-size: 2rem; /* Slightly smaller icon */
+    color: #dc3545; /* Matching red for the icon */
+    margin-bottom: 12px; /* Reduced margin for a cleaner look */
+  }
+  

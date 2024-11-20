@@ -1,0 +1,84 @@
+.our-services-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: bold;
+}
+
+.service-image {
+  max-width: 200%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.service-section {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.service-section h2 {
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.service-section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.services-section {
+  margin-top: 40px;
+}
+
+.services-section h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-item {
+  flex: 1 1 40%; /* Adjusted to 40% for two items per row */
+  background-image: linear-gradient(135deg, #6f6fdd, #4850e8); /* Adjust colors and angle as needed */
+  margin: 10px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: hsl(0, 0%, 8%);
+  max-width:100
+}
+
+
+
+.service-item h3 {
+  color: hsl(210, 12%, 93%);
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #555;
+}

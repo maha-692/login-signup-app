@@ -1,0 +1,146 @@
+/* Base styles for a full-page layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Main container */
+.home-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start (left) */
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background-image: url('./assets/homeimage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    padding: 3rem;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the start (left) */
+    text-align: left; /* Text align left */
+    opacity: 0;
+    animation: slideIn 1.5s forwards;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Scroll animation section (without box styling) */
+.scroll-animation-section {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0; /* Remove padding to avoid box effect */
+    text-align: left; /* Align text to the left */
+}
+
+/* Header and text styling in scroll-animation section */
+.scroll-animation-section h2 {
+    font-size: 3.2rem;
+    color: black; /* Change heading color to black */
+    margin: 1.5rem 0;
+    font-weight: bold;
+}
+
+.scroll-animation-section p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 1.5rem;
+}
+
+.scroll-animation-section p + p {
+    margin-top: 1rem;
+}
+
+.scroll-animation-section strong {
+    color: #0073e6;
+}
+
+
+
+/* Why Choose Us Section */
+.why-choose-us-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.2rem;
+    color: black;
+    align-items: center;    
+}
+
+/* Heading Style */
+.why-choose-us-section h2 {
+    font-size: 3.2rem; /* Increase heading size */
+    margin-bottom: 1.2rem;
+    color: #161617;
+
+}
+
+/* List and Bullet Number */
+.why-choose-us-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.why-choose-us-item {
+    display: flex;
+    align-items: flex-start;
+    margin: 0.6rem 0;
+    padding: 0.6rem;
+    background-color: #2b86e7ea; /* Light blue background */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);/* Subtle shadow */
+}
+
+.why-choose-us-item .bullet-number {
+    font-size: 6.1rem;
+    color: #141415;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.why-choose-us-item .why-choose-us-content {
+    margin-left: 1rem;
+}
+
+.why-choose-us-content strong {
+    font-size: 2rem;
+    color: rgb(11, 11, 11);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.why-choose-us-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: rgba(13, 13, 13, 0.946);
+}
+
+
+footer {
+    flex-shrink: 0; /* Footer stays at the bottom */
+}
+

@@ -1,0 +1,66 @@
+.contact-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left; /* Align the whole container's text to the left */
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us-container h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center; /* Center the heading text */
+}
+
+.contact-us-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center; /* Center the paragraph text */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  text-align: left; /* Align label text to the left */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px; /* Adds space between label and input */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button.btn.btn-primary {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button.btn.btn-primary:hover {
+  background-color: #0056b3;
+}

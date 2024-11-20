@@ -1,0 +1,115 @@
+/* Change color for Signup heading */
+.signup-form-container h2 {
+    color: hsl(0, 25%, 97%); /* Change this to your desired color */
+}
+
+/* Change color for Email and Password labels */
+.signup-form-container label {
+    color: hsl(17, 21%, 94%); /* Change this to your desired color */
+}
+
+.signup-form-container {
+    color:  hsl(17, 21%, 94%);
+}
+
+/* Full-screen container to center the content */
+.signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Box that holds both the form and the image side by side */
+  .signup-box {
+    display: flex;
+    align-items: center;
+    background: #605ce4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 700px;
+    width: 150%;
+    min-height: 300px; /* Set a minimum height */
+  height: 700px; /* Set a specific height */
+  }
+
+  
+  /* Style for the form container */
+  .signup-form-container {
+    padding: 2rem;
+    width: 50%; /* Adjust width to control space between form and image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Style for the image container */
+  .signup-image-container {
+    width: 50%; /* Adjust width to control space between form and image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcf7f7;
+  }
+  
+  .signup-image-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 10px;
+  }
+  
+  /* Form and button styles */
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #fbf7f7;
+    border-radius: 4px;
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #121212;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .signup-button:hover {
+    background-color: #0056b3;
+  }
+  
+p {
+    text-align: center;
+  }
+  
+  p a {
+    color: hsl(240, 11%, 95%); /* Default link color in paragraphs */
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    color: hsl(0, 0%, 9%); /* Change color on hover */
+    text-decoration: underline;
+  }

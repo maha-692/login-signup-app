@@ -1,0 +1,148 @@
+/* Overall layout and styling for the parking availability section */
+.passenger-parking {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent background */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+}
+
+/* Zone styling */
+.zone {
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.zone h2 {
+  text-align: center;
+  color: black;
+  margin: 10px 0;
+}
+
+/* Flexbox layout for slots */
+.slots {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of slots */
+  justify-content: space-between;  /* Even space between slots */
+}
+
+.slot {
+  flex: 1;  /* Each slot will take equal width */
+  margin: 10px;  /* Space between the slots */
+  padding: 20px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  min-width: 150px;  /* Ensure a minimum width for each slot */
+}
+
+.slot.available {
+  background-color: #dff0d8; /* Light green for available slots */
+  color: black;
+}
+
+.slot.booked {
+  background-color: #f2dede;  /* Light red for booked slots */
+  color: #a94442;
+}
+
+.slot:hover {
+  background-color: #e7f1ff; /* Light blue on hover */
+}
+
+/* Booking form styling */
+.booking-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.booking-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.booking-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Ticket display */
+.ticket-display {
+  margin-top: 20px;
+}
+
+.ticket {
+  padding: 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+}
+
+.ticket button {
+  background-color: #28a745;  /* Green button for ticket download */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.ticket button:hover {
+  background-color: #218838;
+}
+
+.ticket p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .slot {
+    width: 48%;  /* Adjusts width for medium screens */
+  }
+
+  .booking-form {
+    padding: 15px;
+  }
+
+  .ticket {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slot {
+    width: 100%;  /* Full width on small screens */
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}

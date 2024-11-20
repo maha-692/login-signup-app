@@ -1,0 +1,57 @@
+.hospital-home-container {
+    text-align: center;
+    background: url('../../assets/img3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    padding: 40px 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hospital-title {
+    background-color:darkblue;
+    font-size: 36px;
+    color: white;
+    margin-top: 0%;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hospital-cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+  }
+  
+  .hospital-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+  }
+  
+  .hospital-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hospital-card h2 {
+    color: darkblue;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  

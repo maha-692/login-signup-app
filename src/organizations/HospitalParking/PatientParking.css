@@ -1,0 +1,132 @@
+.patient-section {
+    background-image: url('../../assets/img3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 20px;
+  }
+  
+  .patient-section h1 {
+    text-align: center;
+    color: white;
+    background-color: #1E3A8A;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .patient-section .zone {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #e7f1ff;
+  }
+  
+  .patient-section .slots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .patient-section .slot {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    min-width: 150px;
+  }
+  
+  .patient-section .slot.available {
+    background-color: #dff0d8;
+    color: black;
+  }
+  
+  .patient-section .slot.booked {
+    background-color: #f2dede;
+    color: #a94442;
+  }
+  
+  .patient-section .slot:hover {
+    background-color: #e7f1ff;
+  }
+  
+  .patient-section .booking-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .patient-section .booking-form input,
+  .patient-section .booking-form select,
+  .patient-section .booking-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .patient-section .booking-form button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .patient-section .booking-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .patient-section .ticket-display {
+    margin-top: 20px;
+  }
+  
+  .patient-section .ticket-display h3 {
+    background-color: darkblue !important;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 0px;
+  }
+  
+  .patient-section .ticket {
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+  }
+  
+  .patient-section .ticket button {
+    background-color:darkblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .patient-section .ticket button:hover {
+    background-color: #0056b3;
+  }
+  
+  .patient-section .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  

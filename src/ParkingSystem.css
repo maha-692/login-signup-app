@@ -1,0 +1,131 @@
+/* src/parkingsystem.css */
+
+.parking-system {
+    text-align: center;
+    margin: 40px; /* Increased margin around the section */
+    font-family: 'Arial', sans-serif; /* Change font for better readability */
+  }
+  
+  h2 {
+    font-size: 4.5em; /* Larger font size for the main heading */
+    margin-bottom: 30px; /* Increased space below the heading */
+    color: #0b5fe5; /* Dark color for better visibility */
+    font-weight: bold;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: space-around; /* Space between categories */
+    flex-wrap: wrap; /* Wrap to new line if necessary */
+  }
+  
+  .category {
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border: 1px solid #ccc; /* Border for the category box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 30px; /* Increased padding for more space inside */
+    width: 300px; /* Increased width of each category box */
+    height: 350px; /* Increased height for more vertical space */
+    margin: 20px; /* Increased space around each box */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animation effects */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .category:hover {
+    transform: translateY(-5px); /* Slightly raise box on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
+  
+  .category-title {
+    font-weight: bold; /* Make category titles bold */
+    margin-bottom: 15px; /* Increased space below title */
+    font-size: 1.8em; /* Larger font size for titles */
+    color: #333; /* Darker color for better visibility */
+  }
+  
+  .category-image {
+    width: 100%; /* Full width of the category box */
+    height: 200px; /* Increased fixed height for images */
+    object-fit: cover; /* Cover the box without distortion */
+    border-radius: 4px; /* Rounded corners for the image */
+    margin-bottom: 10px; /* Space below the image */
+  }
+  
+  .dropdown {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .dropdown li {
+    margin: 5px 0; /* Space between dropdown items */
+  }
+  
+  .dropdown a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+    transition: color 0.2s; /* Smooth color transition */
+  }
+  
+  .dropdown a:hover {
+    color: #0056b3; /* Darker link color on hover */
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .modal-button {
+    background: #0b5fe5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: background 0.3s;
+  }
+  
+  .modal-button:hover {
+    background: #084baf;
+  }
+  
+  .modal-close {
+    background: #ccc;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .modal-close:hover {
+    background: #aaa;
+  }
+  
